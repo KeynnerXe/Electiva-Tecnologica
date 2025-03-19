@@ -1,0 +1,241 @@
+/* Estilos de la página */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif; 
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    
+}
+
+h1 { font-size: 3.5em;}
+h2 { font-size: 2.5em;}
+h3 { font-size: 2em;}
+p { font-size: 1.2em;}
+
+button {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(49, 129, 250);
+    color: white;
+}
+
+#hero button {
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: rgb(136, 189, 250);
+}
+
+/* Etilizar los elementos */
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+}
+
+header .logo {
+    color: rgb(5, 120, 252);
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 25px 30px;
+    margin: 0;
+
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90hv;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.3)
+        ),url('img/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+
+}
+
+#hero button {
+    position: relative;
+    bottom: 30px;
+}
+
+#quienes-somos .container {
+    text-align: center;
+    padding: 100px 15px;
+}
+
+#nuestros-servicios {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#nuestro-servicios .container {
+    padding: 70px, 0px;
+}
+
+#nuestro-servicios .h2 {
+    font-size: 3em;
+    margin-top: 0px;
+}
+
+#nuestros-servicios .carta {
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.carta:nth-child(1) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url('img/luca-bravo-XJXWbfSo2f0-unsplash.jpg');
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url('img/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg');
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url('img/sumup-SGgZ23qRrdo-unsplash.jpg');
+}
+
+.carta:nth-child(4) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url('img/testimg.avif');
+}
+
+#nuestros-servicios p{
+    display: none;
+}
+
+#cotizacion .container {
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#cotizacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: 2.5em;
+    height: 50vh;
+}
+
+footer p{
+    padding: 15px;
+    color: gray;
+    font-weight: bold;
+    font-family: 2em;
+}
+/* Pagina responsive media query */
+
+@media screen and (win-width: 1024px) {
+    header nav {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #hero {
+        height: 60vh;
+        text-align: left;
+        padding: 20px;
+    }
+
+    #hero h1 {
+        font-size: 3em;
+    }
+
+    #quienes-somos .container, #nuestros-servicios .container, #cotizacion .container {
+        padding: 50px 100px;
+        
+    }
+}
+
+
+#formulario {
+    color: white;
+    background-color: rgb(201, 200, 200);
+    text-align: center;
+}
+
+#formulario h2 {
+    color: rgb(104, 104, 104);
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 2em;
+}
+
+#formulario h6 {
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+#formulario input {
+    text-align: left;
+    width: 15%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#formulario textarea {
+    width: 15%;
+    padding: 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#formulario button {
+    position: relative;
+    bottom: 10px;
+}
+
+footer {
+    text-align: center;
+}
